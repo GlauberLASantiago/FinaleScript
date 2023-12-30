@@ -1,0 +1,38 @@
+// This script is used to adjust the volume in the mixer of Finale 27. To work properly, you must open the ScoreManager and select the following options in the "Customize View" button: Name, Mute & Solo, Mix Bank & Channel
+
+// This option allows processing of all open documents
+process open documents
+
+// The following line opens the ScoreManager
+press ctrl + "k"
+
+// Next, we have the commands to position the mouse cursor over the correct location, click, enter the desired volume, and input the number. Do this for each instrument. Modify the values and the number of instruments as necessary.
+
+// Instrument 1
+cursor 475 300 // Modify these values to match the location of the volume on your screen.
+single click
+type 50 // Modify the value between 0-127, depending on the volume you want for the instrument.
+press enter
+
+// Instrument 2
+cursor 475 320
+single click
+type 90
+press enter
+
+// Instrument 3
+cursor 475 340
+single click
+type 120
+press enter
+
+// Instrument 4
+cursor 475 360
+single click
+type 120
+press enter
+
+// The following line closes the ScoreManager
+press ctrl + "k"
+
+save
